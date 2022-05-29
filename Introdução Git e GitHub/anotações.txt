@@ -1,1 +1,5 @@
 Curso introdutório em bootcamp da Dio
+
+git add .
+git commit -m "Comentário do commit"
+git push
