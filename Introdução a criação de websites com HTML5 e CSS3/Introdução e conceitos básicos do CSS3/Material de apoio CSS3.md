@@ -80,12 +80,22 @@ Anteriormente usamos o padding e o margin da forma mais básica, com apenas um v
  
 
 A primeira é colocando um valor para as partes superior e inferior e depois para os lados esquerdo e direito.
-
+```
+.post {
+    padding: 10px 5px;
+}
+```
 O valor de 10 pixels se refere ao eixo Y, ou partes superior e inferior, e os 5 pixels se referem aos lados esquerdo e direito.
 
  
 
 A segunda forma é dando valores para cada lado do box.
+
+```
+.post {
+    padding: 15px 10px 5px 0; 
+}
+```
 
 Então começamos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior com 5 pixels e por último o lado esquerdo com 0, e sempre nessa ordem.
 
@@ -94,6 +104,15 @@ Uma boa dica também é que quando o valor for 0 não precisamos não precisamos
  
 
 A terceira forma é com as propriedades específicas para cada lado, até agora tínhamos visto atalhos para essas propriedades.
+
+```
+.post {
+    padding-top: 15px 
+    paddin-right: 10px;
+    paddin-bottom: 5px;
+    paddin-left: 0;
+}
+```
 
 Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
 
@@ -110,6 +129,13 @@ E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
 
 A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho background.
 
+```
+.post {
+    background-color: green;
+    background-color: #008800;
+    background: #008800;
+}
+```
  
 
 ## Border
@@ -117,6 +143,13 @@ Vimos que a propriedade border pode ter 3 valores: a largura, a cor e o estilo, 
 
 A largura pode ser usada com várias unidades, como px, em e mm. A cor pode ser atribuída pelo nome ou por um código hexadecimal, assim como fizemos com o background, e o estilo é representada por palavras-chave, vamos ver algumas delas:
 
+```
+.post {
+    border: 3px solid blue;
+    border-top: 2px dotted green;
+    border-right: 4px dashed pink;
+}
+```
  
 
 solid: mostra uma borda simples e reta;
@@ -126,6 +159,15 @@ dotted: são bolinhas com um pequeno espaçamento entre elas;
 dashed: forma uma linha tracejada.
 
 E aproveitando que mostrei esse código temos que falar sobre como separar a estilização dos lados de uma borda.
+
+```
+.post {
+    border-top: 2px dotted green;
+    border-right: 4px dashed pink;
+    border-bottom: 1px solid purple;
+    border-left: 4px dotted cyan;
+}
+```
 
 E se você não quiser usar a propriedade border existem as propriedade específicas para cada aspecto de uma borda, são elas border-width para a largura, border-color para a cor e border-style para o estilo.
 
