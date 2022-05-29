@@ -44,6 +44,8 @@ A semântica nos permite descrever mais precisamente o nosso conteúdo, agora um
 
 Representa uma seção genérica de conteúdo quando não houver um elemento mais específico para isso.
 
+> Em tags section utilize título h2 ou menor
+
 `<header>`
 
 É o cabeçalho da página ou de uma seção da página e normalmente contém logotipos, menus, campos de busca.
@@ -62,7 +64,9 @@ Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é ac
 
 `<h1>-<h6>`
 
-Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo `<h1>` o mais importante e `<h6>` o menos. Uma dica: use apenas um `<h1>` por página, pois ele representa o objetivo da sua página.
+Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo `<h1>` o mais importante e `<h6>` o menos. 
+
+> Uma dica: use apenas um `<h1>` por página, pois ele representa o objetivo da sua página.
 
 # Exemplo de H1
 ## Exemplo de H2
@@ -70,6 +74,8 @@ Eles não foram criados na versão 5 do HTML e nem são específicos para semân
 #### Exemplo de H4
 ##### Exemplo de H5
 ###### Exemplo de H6
+
+> Não pule os níveis de títulos. Use h1 depois h2
 
 ## Prática
 Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabeçalho com nosso nome, uma lista de posts (como um blog) e um rodapé para nossos contatos.
